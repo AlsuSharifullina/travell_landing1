@@ -31,12 +31,10 @@ html{
 *::after{
     box-sizing: inherit;
 }
-
-.wrapper{
-    max-width: 1060px;
-    margin: 0 auto;
+img{
+    max-width: 100%;
+    height: auto;
 }
-
 body {
     font-family: 'Lato';
     font-style: normal;
@@ -44,6 +42,10 @@ body {
     font-size: 16px;
     line-height: 1.2;
     color: #102746;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
 }
 /* basis style */
 
@@ -159,3 +161,75 @@ body {
     background: #165fbf;
 }
 /* end inro */
+
+/* start benefits*/
+.benefits {
+    margin-bottom: 131px;
+}
+.benefits__wrapper {
+    position: relative;
+    max-width: 1260px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 2px 20px 0 rgba(21, 24, 36, 0.16);
+}
+.benefits__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    color: #102746;
+    padding: 93px 100px 88px 100px;
+    transform: translateY(-100%);
+    background-color: #ffffff;
+}
+.benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+    padding: 0 100px;
+}
+.benefits__card {
+    grid-column: span 1;
+    margin-bottom: 112px;
+}
+.benefits__card-pic {
+    max-width: 66px;
+    margin-bottom: 37px;
+}
+.benefits__card-img {
+    display: block;
+}
+.benefits__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #000000;
+    margin-bottom: 26px;
+}
+.benefits__card-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 39px;
+}
+.benefits__card-more {
+    display: inline-block;
+    background: url("../img/svg/next.svg") no-repeat 95% center;
+    padding-right: 59px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:24px;
+    color: #006dfe;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.benefits__card-more:hover,
+.benefits__card-more:active,
+.benefits__card-more:focus{
+    background: url("../img/svg/next.svg") no-repeat right center;
+}
+/* end benefits */
